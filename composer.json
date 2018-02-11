@@ -16,5 +16,7 @@
         "twig/twig": "~2.0",
         "bramus/router": "^1.1",
         "opis/http": "^2.0"
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
