@@ -17,6 +17,11 @@
         "bramus/router": "^1.1",
         "opis/http": "^2.0"
     },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
     "minimum-stability": "dev",
     "prefer-stable": true
 }
