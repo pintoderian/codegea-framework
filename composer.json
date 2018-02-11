@@ -1,6 +1,9 @@
 {
-    "name": "Codegea Framework",
-    "description": "Framework mvc for codegea",
+    "name": "codegea/codegea",
+    "description": "The Codegea Framework.",
+    "keywords": ["framework", "codegea"],
+    "license": "MIT",
+    "type": "project",
     "authors": [
         {
             "name": "Derian Pinto",
