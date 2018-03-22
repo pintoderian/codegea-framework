@@ -2,11 +2,12 @@
 // =============================================================================
 // Default url amigables
 // =============================================================================
-Route::get('/users', 'DemoController@user');
-Route::get('/', 'DemoController@home');
+Route::get('/', 'FrontEndController@home');
+// =============================================================================
+// Demo url show users
+// =============================================================================
+Route::get('/users', 'FrontEndController@users');
 // =============================================================================
 // Definiendo redireccionamiento en caso de error
 // =============================================================================
-Route::error(function(){
-    echo 'Página de error';
-});
+Route::error('ErrorController@index');

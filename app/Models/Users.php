@@ -1,6 +1,5 @@
 <?php
-require_once __DIR__.'/../config/database.php';
-
+namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 
 class Users extends Model{

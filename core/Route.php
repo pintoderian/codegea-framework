@@ -9,6 +9,10 @@ class Route{
 	// ===========================================================================
 	// DEFINIENDO METODOS DE RUTAS DE BRAMUS
 	// ===========================================================================
+	public static function setNamespace($params){
+			$instance = static::getInstance();
+			$instance->router->setNamespace($params);
+	}
 	public static function get($route, $params) {
 			$instance = static::getInstance();
 			$instance->router->get($route, $params);

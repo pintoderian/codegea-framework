@@ -1,5 +1,5 @@
 <?php
-class Core extends Twig_Extension{
+class Extension extends Twig_Extension{
     public function getFunctions() {
         return array(
             new Twig_Function('assets', array($this, 'assets')),

@@ -14,8 +14,8 @@ $base->addConnection([
     'database' => $db['database'],
     'username' => $db['user'],
     'password' => $db['pass'],
-    'charset' => 'utf8',
-    'collation' => 'utf8_general_ci',
+    'charset' => 'utf8mb4',
+    'collation' => 'utf8mb4_unicode_ci',
     'prefix' => '',
 ]);
 
