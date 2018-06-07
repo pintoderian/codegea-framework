@@ -2,3 +2,4 @@
 /vendor
 /.idea
 /.vagrant
+package-lock.json
