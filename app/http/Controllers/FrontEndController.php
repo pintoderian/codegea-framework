@@ -13,7 +13,7 @@ class FrontEndController extends Controller{
     public function form(){
         $request = Request::all();
         $this->validate($request, [
-            'title' => 'required|unique:users,username'
+            'title' => 'required|unique:users,username,2'
         ]);
         return $this->view('form.twig');
     }

@@ -131,6 +131,12 @@ class Validator{
                             $errors[$key] = "This id:{$db[2]} not exists";
                             $session->set('errors', $errors);
                             if(!$request->isAjax()): break; endif;
+                        }else{
+                            if ($ref::where($db[1], '=', "{$input}")->where('id', '!=', "{$db[2]}")->exists()) {
+                                $errors[$key] = "This {$db[1]} exists";
+                                $session->set('errors', $errors);
+                                if(!$request->isAjax()): break; endif;
+                            }
                         }
                     }
                 }else{

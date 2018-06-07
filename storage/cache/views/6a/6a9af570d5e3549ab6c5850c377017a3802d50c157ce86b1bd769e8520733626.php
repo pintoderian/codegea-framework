@@ -47,7 +47,7 @@ class __TwigTemplate_589f730cfcee5c3f41a0c09b21e07608855fbf102ea9714a197c7b20bf9
 </head>
 <body>
     <div class=\"codegea\">
-        <nav class=\"navbar navbar-expand-lg navbar-codegea mb-5\">
+        <nav class=\"navbar navbar-expand-lg navbar-codegea navbar-light mb-5\">
             <div class=\"container\">
                 <a class=\"navbar-brand\" href=\"";
         // line 23
@@ -167,7 +167,7 @@ class __TwigTemplate_589f730cfcee5c3f41a0c09b21e07608855fbf102ea9714a197c7b20bf9
 </head>
 <body>
     <div class=\"codegea\">
-        <nav class=\"navbar navbar-expand-lg navbar-codegea mb-5\">
+        <nav class=\"navbar navbar-expand-lg navbar-codegea navbar-light mb-5\">
             <div class=\"container\">
                 <a class=\"navbar-brand\" href=\"{{ url() }}\">Codegea</a>
                 <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
