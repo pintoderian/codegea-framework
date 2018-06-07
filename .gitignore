@@ -3,3 +3,4 @@
 /.idea
 /.vagrant
 package-lock.json
+composer.lock
