@@ -1,0 +1,40 @@
+{
+  "name": "cgframework",
+  "version": "1.0.0",
+  "description": "Codegea Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pintoderian/Sass-Gulp.git"
+  },
+  "keywords": [
+    "sass",
+    "gulp"
+  ],
+  "author": "Derian Pinto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pintoderian/Sass-Gulp/issues"
+  },
+  "homepage": "https://github.com/pintoderian/Sass-Gulp#readme",
+  "devDependencies": {
+    "bootstrap": "^4.1.1",
+    "browser-sync": "^2.23.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.0",
+    "jquery": "^3.2.1",
+    "merge-stream": "^1.0.1",
+    "mustache": "^2.3.0",
+    "popper.js": "^1.12.9",
+    "tether": "^1.4.3"
+  }
+}

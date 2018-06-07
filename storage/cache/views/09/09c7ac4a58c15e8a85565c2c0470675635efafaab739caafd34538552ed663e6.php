@@ -1,7 +1,7 @@
 <?php
 
-/* errors/404.twig */
-class __TwigTemplate_315d178f5f8526118b7586929db93ab6397cd9aa239b092a4b2b94b81cea930e extends Twig_Template
+/* APP/errors/404.twig */
+class __TwigTemplate_c8c47fd40709db7f7be68243ead4ba47fe9cd9ef530203e2ef89dfaf695170de extends Twig_Template
 {
     private $source;
 
@@ -66,7 +66,7 @@ class __TwigTemplate_315d178f5f8526118b7586929db93ab6397cd9aa239b092a4b2b94b81ce
 
     public function getTemplateName()
     {
-        return "errors/404.twig";
+        return "APP/errors/404.twig";
     }
 
     public function getDebugInfo()
@@ -117,6 +117,6 @@ class __TwigTemplate_315d178f5f8526118b7586929db93ab6397cd9aa239b092a4b2b94b81ce
         <h1>404 - Page not found!</h1>
     </div>
 </body>
-</html>", "errors/404.twig", "C:\\laragon\\www\\codegea-framework\\resource\\views\\errors\\404.twig");
+</html>", "APP/errors/404.twig", "C:\\laragon\\www\\codegea-framework\\resource\\views\\APP\\errors\\404.twig");
     }
 }

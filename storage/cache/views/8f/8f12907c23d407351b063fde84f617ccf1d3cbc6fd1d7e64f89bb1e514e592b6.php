@@ -1,7 +1,7 @@
 <?php
 
-/* users.twig */
-class __TwigTemplate_ccacb1b1261e4a8383cf0f7519706f30cf312d097a7bd768f43ab07c4f7b1b72 extends Twig_Template
+/* errors/404.twig */
+class __TwigTemplate_752bace840a9ad959090b31f3c5b0188a4a94376a2a0ca2d6b2ded3bb2abc558 extends Twig_Template
 {
     private $source;
 
@@ -26,7 +26,7 @@ class __TwigTemplate_ccacb1b1261e4a8383cf0f7519706f30cf312d097a7bd768f43ab07c4f7
     <meta charset=\"UTF-8\">
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
     <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">
-    <title>Welcome to framework</title>
+    <title>404</title>
     <link href='https://fonts.googleapis.com/css?family=Miriam+Libre:400,700|Source+Sans+Pro:200,400,700,600,400italic,700italic' rel='stylesheet' type='text/css'>
     <style>
         body {
@@ -58,30 +58,7 @@ class __TwigTemplate_ccacb1b1261e4a8383cf0f7519706f30cf312d097a7bd768f43ab07c4f7
 </head>
 <body>
     <div class=\"codegea\">
-        <h1>Framework Codegea</h1>
-        <div class=\"content\">
-            <h2>Usuarios agregados en la BD!</h2>
-            <p>
-                ";
-        // line 43
-        $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(($context["user"] ?? null));
-        foreach ($context['_seq'] as $context["_key"] => $context["e"]) {
-            // line 44
-            echo "                    ";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["e"], "name", array()), "html", null, true);
-            echo "<br>
-                ";
-        }
-        $_parent = $context['_parent'];
-        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['e'], $context['_parent'], $context['loop']);
-        $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 46
-        echo "            </p>
-            <div class=\"footer\">
-                Desarrollado por: <a href=\"https://github.com/pintoderian\">Derian Pinto</a>
-            </div>
-        </div>
+        <h1>404 - Page not found!</h1>
     </div>
 </body>
 </html>";
@@ -89,17 +66,12 @@ class __TwigTemplate_ccacb1b1261e4a8383cf0f7519706f30cf312d097a7bd768f43ab07c4f7
 
     public function getTemplateName()
     {
-        return "users.twig";
-    }
-
-    public function isTraitable()
-    {
-        return false;
+        return "errors/404.twig";
     }
 
     public function getDebugInfo()
     {
-        return array (  80 => 46,  71 => 44,  67 => 43,  23 => 1,);
+        return array (  23 => 1,);
     }
 
     public function getSourceContext()
@@ -110,7 +82,7 @@ class __TwigTemplate_ccacb1b1261e4a8383cf0f7519706f30cf312d097a7bd768f43ab07c4f7
     <meta charset=\"UTF-8\">
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
     <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">
-    <title>Welcome to framework</title>
+    <title>404</title>
     <link href='https://fonts.googleapis.com/css?family=Miriam+Libre:400,700|Source+Sans+Pro:200,400,700,600,400italic,700italic' rel='stylesheet' type='text/css'>
     <style>
         body {
@@ -142,20 +114,9 @@ class __TwigTemplate_ccacb1b1261e4a8383cf0f7519706f30cf312d097a7bd768f43ab07c4f7
 </head>
 <body>
     <div class=\"codegea\">
-        <h1>Framework Codegea</h1>
-        <div class=\"content\">
-            <h2>Usuarios agregados en la BD!</h2>
-            <p>
-                {% for e in user %}
-                    {{ e.name }}<br>
-                {% endfor %}
-            </p>
-            <div class=\"footer\">
-                Desarrollado por: <a href=\"https://github.com/pintoderian\">Derian Pinto</a>
-            </div>
-        </div>
+        <h1>404 - Page not found!</h1>
     </div>
 </body>
-</html>", "users.twig", "C:\\laragon\\www\\codegea-framework\\resource\\views\\users.twig");
+</html>", "errors/404.twig", "C:\\laragon\\www\\codegea-framework\\resource\\views\\errors\\404.twig");
     }
 }

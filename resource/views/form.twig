@@ -1,0 +1,39 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="card mb-5">
+    <div class="card-header text-center">
+        <h3 class="mb-0">Form Submit</h3>
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">Check Username</h5>
+        <form action="{{ current_url() }}" method="post">
+            {{ csrf("input")|raw }}
+            <div class="form-group">
+                <input type="text" name="title" class="form-control {% if check_has('title') %} is-invalid {% endif %}" placeholder="Enter username."/>
+                {% if check_has('title') %}
+                    <div class="invalid-feedback">{{ error_has('title') }}</div>
+                {% endif %}
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
+
+<div class="card mb-5">
+    <div class="card-header text-center">
+        <h3 class="mb-0">Form ajax</h3>
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">Check Username</h5>
+        <form action="" onsubmit="return false">
+            <div id="error" class="form-group">
+                <input id="title" type="text" name="title" class="form-control" placeholder="Enter username"/>
+                <div id="mensaje" class="invalid-feedback"></div>
+            </div>
+            <button type="submit" class="btn btn-success enviar">Submit</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

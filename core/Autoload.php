@@ -1,14 +1,13 @@
 <?php
-require_once __DIR__.'/../vendor/autoload.php';
-require_once __DIR__.'/../config/database.php';
-// =============================================================================
-// Extructura base para la carga de templates de twig
-// =============================================================================
-require_once 'BaseController.php';
-// =============================================================================
-// Iniciando rutas
-// =============================================================================
-require_once 'Route.php';
-Route::setNamespace('App\Controllers');
-require_once __DIR__.'/../route/web.php';
-Route::run();
+if (!isset($_SESSION)): @session_start(); endif;
+require_once PUBLIC_PATH.'vendor/autoload.php';
+Loader::file(PUBLIC_PATH.'core/Database');
+Loader::file(PUBLIC_PATH.'core/Session');
+Loader::file(PUBLIC_PATH.'core/Request');
+Loader::file(PUBLIC_PATH.'core/Response');
+Loader::file(PUBLIC_PATH.'core/Validator');
+Loader::file(PUBLIC_PATH.'core/BaseController');
+Loader::folder(PUBLIC_PATH.'app');
+Loader::file(PUBLIC_PATH.'core/App');
+$app = new App;
+$app->run();
