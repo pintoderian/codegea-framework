@@ -20,8 +20,7 @@ class FrontEndController extends Controller{
 
 
     public function users(){
-        $request = Request::all();
-        $current_page = is_numeric($request->get("page")) ? $request->get('page') : 1;
+        $current_page = $this->getPage(Request::all());
         $this->paginator($current_page);
 
         $users = Users::paginate(2);

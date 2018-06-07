@@ -24,12 +24,25 @@ class BaseController{
         $this->template->addExtension(new \Extension());
     }
 
+    public function getPage($request){
+        $page = @$request->get("page");
+        if(isset($page)){
+            if(is_numeric($page)){
+                return $page;
+            }else{
+                redirect('/error');
+            }
+        }else{
+            return 1;
+        }
+    }
+    
     public function paginator($current_page = 1){
         Paginator::currentPageResolver(function() use ($current_page) {
             return $current_page;
         });
     }
-
+    
     public function view($path = '', $params = []){
         echo $this->template->render($path, $params);
     }
